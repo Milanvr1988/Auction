@@ -2,8 +2,10 @@
 <div class="jumbotron">
     <h3 class="text-center"> All Post </h3>
 </div>
-<div class="container">
-    <div class="row">
+<div class="container-fluid">
+    <div class="row"><br>
+        <div class="offset-1"><br>
+            <div class="row"><br>
         <?php foreach( $allPost as $post ): ?>
             <div class="card" style="width: 18rem;">
             <img src=" <?php echo $post->picture; ?> " class="card-img-top" alt="...">
@@ -14,8 +16,13 @@
                 <button type="button" class="btn btn-secondary btn-sm" disabled> <?php echo $post->price; ?>rsd </button>
                 <button type="button" class="btn btn-secondary btn-sm" disabled>Post Created <?php $date = date_create($post->created_at); echo date_format($date,"d-m-Y"); ?> </button>
                 <button type="button" class="btn btn-secondary btn-sm" disabled> Delivery: <?php echo $post->delivery; ?></button>
+                <?php if(isset($_SESSION['logUser']) && $post->user_id  == $_SESSION['logUser']->id ): ?>
+                <a href="index.php?deletePost=<?php echo $post->id; ?>"><button type="button" class="btn btn-danger btn-sm"> Delete </button></a>
+                <?php endif; ?>
+            </div>
             </div>
         <?php endforeach; ?>
+            </div><br>
         </div>
     </div>
 </div>

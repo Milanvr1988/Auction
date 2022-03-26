@@ -41,6 +41,13 @@ class Posts
         $allPost = $query->fetchAll(PDO::FETCH_OBJ);
         return $allPost;
     }
+    public function deletePost($id)
+    {
+        $sql = "DELETE FROM posts WHERE id = ?";
+        $query = $this->db->prepare($sql);
+        $query->execute([$id]);
+
+    }
 
 }
 
