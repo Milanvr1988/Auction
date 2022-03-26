@@ -2,7 +2,7 @@
 require "bootstrap.php";
 
 if (isset($_POST['log_submit'])) {
-    echo $logedUser->LoginUser(); 
+    echo $user->LoginUser(); 
 }
 
 require "view/view.login.php";

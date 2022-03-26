@@ -15,7 +15,7 @@
 			</div><br>
 			<p class="login-register-text">Don't have an account? <a href="register.php">Register Here</a>.</p>
 		</form>
-		<?php if ( $logedUser->wrongLogPassword ):?>
+		<?php if ( $user->wrongLogPassword ):?>
 			<div class="alert alert-primary" role="alert">
 				<h1 class="success"> Wrong Email or Password. Try agane! </h1>
 			</div>

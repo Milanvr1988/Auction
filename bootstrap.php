@@ -5,10 +5,11 @@ $config = require "config.php";
 $configuration = $config['database'];
 require "Class/Connection.php";
 require "Class/Users.php";
+require "Class/Posts.php";
 
 $db = Connection::con($configuration);
-$registerUser = new Users($db);
-$logedUser = new Users($db);
+$user = new Users($db);
+$post = new Posts($db);
 
 
 ?>

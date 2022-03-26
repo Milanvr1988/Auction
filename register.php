@@ -1,7 +1,7 @@
 <?php 
 require "bootstrap.php"; 
 if (isset($_POST['reg_submit'])) {
-    echo $registerUser->RegisterUser(); 
+    echo $user->RegisterUser(); 
 }
 require "view/view.register.php"; 
 ?>

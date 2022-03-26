@@ -47,6 +47,13 @@
           <a href="" class="nav-link">About Auction</a>
       </li>
 </ul>
+<?php if(isset($_SESSION['logUser'])):?>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a href="insert.post.php" class="nav-link">Add post</a>
+    </li>
+  </ul>
+<?php endif; ?>
 <div class="dropdown">
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     All product
@@ -60,6 +67,5 @@
 </nav>
 
 </div>
-<a href="posts.php">Insert Post</a>
 
 

@@ -23,17 +23,17 @@
 			</div><br>
 			<p class="login-register-text">Have an account? <a href="login.php">Login Here</a>.</p>
 		</form>
-		<?php if ( $registerUser->regAlert ):?>
+		<?php if ( $user->regAlert ):?>
 			<div class="alert alert-primary" role="alert">
 				<h1 class="success"> Success register </h1>
 			</div>
 		<?php endif; ?>
-		<?php if ( $registerUser->wrongEmail ):?>
+		<?php if ( $user->wrongEmail ):?>
 			<div class="alert alert-primary" role="alert">
 				<h1 class="success"> Email exist. Try agane. </h1>
 			</div>
 		<?php endif; ?>
-		<?php if ( $registerUser->confirmPassword ):?>
+		<?php if ( $user->confirmPassword ):?>
 			<div class="alert alert-primary" role="alert">
 				<h1 class="success"> Confirm passwort is wrong! </h1>
 			</div>
