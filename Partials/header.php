@@ -17,7 +17,7 @@
       <button type="button" class="btn btn-secondary btn-sm" disabled> <?php echo $_SESSION['logUser']->name." ".$_SESSION['logUser']->surname; ?> </button>
       <a href="logout.php" class="float-none"> <button type="button" class="btn btn-sm"> Odjava </button> </a>
     </div>
-      <p class="text-center">Auction</p>
+      <h1 class="text-center"> Auction</h1>
     <br>
 </div>
 <?php else: ?>
@@ -44,7 +44,7 @@
 </ul>
 <ul class="navbar-nav">
       <li class="nav-item">
-          <a href="" class="nav-link">About Auction</a>
+          <a href="aboutAuction.php" class="nav-link">About Auction</a>
       </li>
 </ul>
 <?php if(isset($_SESSION['logUser'])):?>
@@ -54,7 +54,7 @@
     </li>
   </ul>
 <?php endif; ?>
-<div class="dropdown">
+<!-- <div class="dropdown">
   <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     All product
   </button>
@@ -63,7 +63,7 @@
     <a class="dropdown-item" href="#">Pcelinji proizvodi</a>
     <a class="dropdown-item" href="#">Something else here</a>
   </div>
-</div>
+</div> -->
 </nav>
 
 </div>

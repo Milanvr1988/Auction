@@ -48,7 +48,15 @@ class Posts
         $query->execute([$id]);
 
     }
+    public function SelectSinglPost($table, $id)
+    {
 
+        $sql = "SELECT * FROM {$table} WHERE id = ?";
+        $query = $this->db->prepare($sql);
+        $query->execute([$id]);
+        $singlPost = $query->fetch(PDO::FETCH_OBJ);
+        return $singlPost;
+    }
 }
 
 

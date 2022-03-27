@@ -32,7 +32,7 @@
 				<input type="text" placeholder=" descryption " name="insert_description" class="form-control" required>
 			</div><br>
 			<div class="input-group">
-				<input type="intiger" placeholder=" price " name="insert_price" class="form-control" required>
+				<input type="intiger" placeholder=" the price is expressed in RSD " name="insert_price" class="form-control" required>
 			</div><br>
             <div class="input-group form-group">
                 <select class="form-control" name="insert_delivery">
