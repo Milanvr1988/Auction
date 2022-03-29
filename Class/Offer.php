@@ -20,28 +20,14 @@ class Offer
         $query = $this->db->prepare($sql);
         $query->execute([$price, $offer, $offerTime, $offerPostID]);
     }
-    public function selectAllOffer($table)
+    public function selectAllOffer($table,$id)
     {
-        $sql = "SELECT * FROM {$table}";
-        $query = $this->db->prepare($sql);
-        $query->execute();
-        $allOffer = $query->fetchAll(PDO::FETCH_OBJ);
-        return $allOffer;
-    }
-    public function offerSinglPost($table,$id)
-    {
-        // var_dump($id);
-        // die();
         $sql = "SELECT * FROM {$table} WHERE offerPostId = $id";
         $query = $this->db->prepare($sql);
         $query->execute([$id]);
-        $offerSinglPost = $query->fetch(PDO::FETCH_OBJ);
-        // var_dump($offerSinglPost);
-        // die();
-        return $offerSinglPost;
+        $allOffer = $query->fetchAll(PDO::FETCH_OBJ);
+        return $allOffer;
     }
-
-
 }
 
 

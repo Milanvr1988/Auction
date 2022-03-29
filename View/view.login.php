@@ -16,7 +16,7 @@
 		</form>
 		<?php if ( $user->wrongLogPassword ):?>
 			<div class="alert alert-primary" role="alert">
-				<h1 class="success"> Wrong Email or Password. Try agane! </h1>
+				<h1 class="success"> Wrong Email or Password. Try again! </h1>
 			</div>
 		<?php endif; ?>
 	</div>

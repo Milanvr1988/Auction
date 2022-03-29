@@ -1,6 +1,6 @@
 <?php require "Partials/header.php"; ?>
 
-<!-- <?php foreach ( $viewOfferedPrice as $viewOffer ): ?> -->
+<?php foreach ( $viewOfferedPrice as $viewOffer ): ?>
 
     <div class="container">
     <table class="table table-striped">
@@ -15,15 +15,15 @@
         <tbody>
             <tr>
             <th scope="row">1</th>
-            <td> <?php echo $viewOfferedPrice->offerName; ?> </td>
-            <td> <?php $date = date_create($viewOfferedPrice->offerTime); echo date_format($date,"d-m-Y");?> </td>
-            <td> <?php echo $viewOfferedPrice->offerPrice; ?>rsd </td>
+            <td> <?php echo $viewOffer->offerName; ?> </td>
+            <td> <?php $date = date_create($viewOffer->offerTime); echo date_format($date,"d-m-Y");?> </td>
+            <td> <?php echo $viewOffer->offerPrice; ?>rsd </td>
             </tr>
         </tbody>
     </table>
 </div>
 
-  <!-- <?php endforeach; ?>     -->
+  <?php endforeach; ?>    
 
 <?php require "Partials/footer.php"; ?>
 
