@@ -16,7 +16,7 @@
 </div>
 <div class="container">
     <a href="index.php"> <button class="btn btn-light"> Back</button> </a><br><br>
-	<?php if ( $post->PostStatus ):?>
+	<?php if ( $post->postStatus ):?>
 			<div class="alert alert-primary" role="alert">
 				<h1 class="success"> Posts inserted! </h1>
 			</div>

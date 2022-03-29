@@ -30,7 +30,7 @@
 		<?php endif; ?>
 		<?php if ( $user->wrongEmail ):?>
 			<div class="alert alert-primary" role="alert">
-				<h1 class="success"> Email exist. Try agane. </h1>
+				<h1 class="success"> Email exist. Try again. </h1>
 			</div>
 		<?php endif; ?>
 		<?php if ( $user->confirmPassword ):?>

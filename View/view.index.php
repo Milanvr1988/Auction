@@ -1,9 +1,5 @@
-
-
-
 <?php if(isset($_SESSION['logUser'])): ?>
-
-    <?php require "Partials/header.php"; ?>
+<?php require "Partials/header.php"; ?>
 <div class="jumbotron">
     <h3 class="text-center"> All Posts </h3>
 </div>
@@ -65,8 +61,6 @@
 </div>
 
 <?php require "Partials/footer.php"; ?>
-
-
 <?php endif; ?>
 
 

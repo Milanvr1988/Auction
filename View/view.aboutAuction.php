@@ -1,5 +1,4 @@
 <?php require "Partials/header.php"; ?>
-
 <div class="jumbotron"> <h1 class="text-center">Auction rules</h1></div>
 <div class="container">
     <div class="row">

@@ -6,7 +6,7 @@ if (!$_SESSION['logUser']) {
 }
 
 if (isset($_POST['insertBtn'])) {
-    $post->InsertPost('posts');
+    $post->insertPost('posts');
 }
 
 require "View/view.insert.post.php";

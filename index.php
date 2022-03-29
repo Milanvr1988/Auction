@@ -5,8 +5,7 @@ if (isset($_SESSION['logUser']) && isset($_GET['deletePost'])) {
     $post->deletePost($_GET['deletePost']);
 }
 
-$allPost = $post->SelectAllPost('posts');
-
+$allPost = $post->selectAllPost('posts');
 
 require "View/view.index.php";
 ?>

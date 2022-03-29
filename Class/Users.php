@@ -6,19 +6,17 @@ class Users
     public $confirmPassword = Null;
     public $wrongLogPassword = null;
 
-
     public function __construct($db)
     {
         $this->db = $db;
     }
-    public function RegisterUser()
+    public function registerUser()
     {
         $name = $_POST['reg_name'];
         $username = $_POST['reg_username'];
         $email = $_POST['reg_email'];
         $password = md5($_POST['reg_password']);
         $cpassword = md5($_POST['reg_cpassword']);
-    
 
         if ( $password == $cpassword ) {
             $sqlChack = " SELECT * FROM users where email = ? ";
@@ -45,11 +43,10 @@ class Users
             }
     }
 
-    public function LoginUser()
+    public function loginUser()
     {
         $log_email = $_POST['log_email'];
         $log_password = md5($_POST['log_password']);
-    
     
         $sql = "SELECT * FROM users WHERE email = ? AND password = ?  ";
         $query = $this->db->prepare($sql);

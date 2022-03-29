@@ -2,14 +2,14 @@
 
 class Posts  
 {
-    public $PostStatus = null;
+    public $postStatus = null;
 
     public function __construct($db)
     {
         $this->db = $db;
     }
 
-    public function InsertPost($table)
+    public function insertPost($table)
     {
         $name = $_POST['insert_name'];
         $description = $_POST['insert_description'];
@@ -29,11 +29,10 @@ class Posts
         $query->execute([$name, $description,$area_image, $price,$delivery,$owner,$time]);
 
         if ($query) {
-            $this->PostStatus = true;
+            $this->postStatus = true;
         }
     }
-
-    public function SelectAllPost($table)
+    public function selectAllPost($table)
     {
         $sql = "SELECT * FROM {$table}";
         $query = $this->db->prepare($sql);
@@ -48,9 +47,8 @@ class Posts
         $query->execute([$id]);
 
     }
-    public function SelectSinglPost($table, $id)
+    public function selectSinglPost($table, $id)
     {
-
         $sql = "SELECT * FROM {$table} WHERE id = ?";
         $query = $this->db->prepare($sql);
         $query->execute([$id]);

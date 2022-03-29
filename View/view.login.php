@@ -1,5 +1,4 @@
 <?php require "Partials/header.php"; ?>
-
 <body>
 	<div class="container">
 		<form action="login.php" method="POST">
@@ -22,5 +21,4 @@
 		<?php endif; ?>
 	</div>
 </body>
-
 <?php require "Partials/footer.php"; ?>

@@ -15,7 +15,7 @@
     <br>
     <div class="btn-group float-right" role="group" aria-label="Basic example">
       <button type="button" class="btn btn-secondary btn-sm" disabled> <?php echo $_SESSION['logUser']->name." ".$_SESSION['logUser']->surname; ?> </button>
-      <a href="logout.php" class="float-none"> <button type="button" class="btn btn-sm"> Odjava </button> </a>
+      <a href="logout.php" class="float-none"> <button type="button" class="btn btn-sm"> Logout </button> </a>
     </div>
       <h1 class="text-center"> Auction</h1>
     <br>
@@ -26,7 +26,7 @@
     <div class="btn-group float-right" role="group" aria-label="Basic example">
     <a href="register.php"><button class="btn btn-secondary" >Register/Login</button></a>
     </div>
-      <p class="text-center">Auction</p>
+      <h1 class="text-center">Auction</h1>
     <br>
 </div>
 <?php endif; ?>
@@ -54,16 +54,6 @@
     </li>
   </ul>
 <?php endif; ?>
-<!-- <div class="dropdown">
-  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    All product
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Napici</a>
-    <a class="dropdown-item" href="#">Pcelinji proizvodi</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div> -->
 </nav>
 
 </div>
